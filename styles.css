@@ -15,6 +15,11 @@ body {
    =========================================== */
 
 .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     /* TODO: Add display: flex to make this a flex container */
     /* TODO: Add justify-content: space-between to space logo and links apart */
     /* TODO: Add align-items: center to center items vertically */
@@ -29,9 +34,12 @@ body {
 }
 
 .nav-links {
+    display: flex;
+    flex-direction: row;
     /* TODO: Add display: flex to make this a flex container */
     /* TODO: Add gap property (try 2rem) for spacing between links */
     list-style: none;
+    transition: 100ms;
 }
 
 .nav-links a {
@@ -39,10 +47,12 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
+    transition: background-color 500ms ease;
     /* TODO: Add transition property for smooth hover effects */
 }
 
 .nav-links a:hover {
+    background-color: rgb(84, 84, 84);
     /* TODO: Add background-color for hover state */
 }
 
@@ -51,6 +61,9 @@ body {
    =========================================== */
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* TODO: Add display: flex to make this a flex container */
     /* TODO: Add justify-content: center to center horizontally */
     /* TODO: Add align-items: center to center vertically */
@@ -78,9 +91,11 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition:  500ms;
     /* TODO: Add transition property for smooth hover effects */
 }
 
 .cta-button:hover {
+    background-color: #fc9898;
     /* TODO: Add background-color for hover state (try #ff5252) */
 }
